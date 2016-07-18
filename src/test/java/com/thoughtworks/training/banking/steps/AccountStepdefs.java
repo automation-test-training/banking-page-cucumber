@@ -23,7 +23,7 @@ public class AccountStepdefs {
     IonicHelpers.open_side_menu();
     IonicHelpers.click_side_menu_item("Login");
 
-    $("ion-modal-view").$("select").selectOptionByValue("heaton");
+    $("ion-modal-view").$("select").selectOption("heaton");
     $("ion-modal-view").$("form").submit();
   }
 
