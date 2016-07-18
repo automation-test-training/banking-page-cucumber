@@ -1,7 +1,10 @@
+package com.thoughtworks.training.banking.steps;
+
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import com.thoughtworks.training.banking.IonicHelpers;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -46,7 +49,7 @@ public class Stepdefs {
 
     @When("^I click side menu icon$")
     public void i_click_side_menu_icon() throws Throwable {
-        $("div.nav-bar-block[nav-bar=\"active\"]").$("button.button.button-icon.button-clear.ion-navicon").click();
+        IonicHelpers.open_side_menu();
     }
 
     @Then("^I should see menu items:$")
@@ -62,7 +65,7 @@ public class Stepdefs {
 
     @Given("^I see menu items$")
     public void i_see_menu_items() throws Throwable {
-        $("div.nav-bar-block[nav-bar=\"active\"]").$("button.button.button-icon.button-clear.ion-navicon").click();
+        IonicHelpers.open_side_menu();
 
         SelenideElement sideMenu = $("ion-side-menu").$("ion-list");
         sideMenu.should(appear);

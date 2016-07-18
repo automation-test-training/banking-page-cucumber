@@ -22,6 +22,6 @@ repositories {
 test {
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
-    systemProperty('selenide.browser', 'LocalChromeDriverProvider')
-//    systemProperty('selenide.browser', 'LocalAndroidDriverProvider')
+    systemProperty('selenide.browser', 'com.thoughtworks.training.banking.LocalChromeDriverProvider')
+//    systemProperty('selenide.browser', 'com.thoughtworks.training.banking.LocalAndroidDriverProvider')
 }

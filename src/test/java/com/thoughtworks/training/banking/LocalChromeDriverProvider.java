@@ -1,3 +1,5 @@
+package com.thoughtworks.training.banking;
+
 import com.codeborne.selenide.WebDriverProvider;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

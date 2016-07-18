@@ -1,3 +1,5 @@
+package com.thoughtworks.training.banking;
+
 import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
